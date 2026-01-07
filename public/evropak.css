@@ -2,16 +2,31 @@
 :root {
     --cervena: #8b0000; --kremova: #f4f1ea; --text: #333;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
 
-body { background: var(--kremova); color: var(--text); line-height: 1.5; }
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; }
+
+body { background: var(--kremova); 
+    color: var(--text); 
+    line-height: 1.5; 
+}
 
 /* 2. HLAVIČKA A NAVIGACE */
 header { 
-    background: var(--cervena); color: white; padding: 15px 0; 
-    position: sticky; top: 0; z-index: 100; text-align: center; 
+    background: var(--cervena); 
+    color: white; 
+    padding: 15px 0; 
+    position: sticky; 
+    top: 0; z-index: 100; 
+    text-align: center; 
 }
-header h1 { color: var(--kremova); margin-bottom: 5px; font-size: 1.8rem; }
+
+header h1 { color: var(--kremova); 
+    margin-bottom: 5px; 
+    font-size: 1.8rem; 
+}
 
 nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; }
 nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
@@ -20,7 +35,7 @@ nav a:hover, nav a.active { color: #ffcc00; }
 /* 3. HLAVNÍ BLOK (MAIN) */
 main { 
     max-width: 1000px; margin: 20px auto; padding: 25px; 
-    background: white; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    background: white; border-radius: 5px;; 
 }
 
 h2, h3 { color: var(--cervena); margin: 20px 0 10px; }
@@ -47,24 +62,22 @@ p { margin-bottom: 15px; }
 
 /* 6. TABULKY A FORMULÁŘE */
 table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-table td, table th { border-bottom: 1px solid #ddd; padding: 10px; text-align: left; }
+table td { border-bottom: 1px solid #ddd; padding: 10px; text-align: left; }
 table th { background: var(--kremova); color: var(--cervena); }
 
 form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; }
 input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
 
 /* 7. TLAČÍTKA */
-.btn-primary, .btn-menu, button { 
+.btn-primary, button { 
     display: inline-block; padding: 10px 20px; border-radius: 4px; 
     text-decoration: none; font-weight: bold; cursor: pointer; border: none;
     transition: 0.3s;
 }
 .btn-primary, button { background: var(--cervena); color: white; }
-.btn-menu { border: 2px solid var(--cervena); color: var(--cervena); background: white; margin-right: 10px; }
-.btn-primary:hover, .btn-menu:hover, button:hover { opacity: 0.8; }
+.btn-primary:hover, button:hover { opacity: 0.8; }
 
 /* 8. PATIČKA A DOPLŇKY */
-h3[id] { scroll-margin-top: 100px; } /* Pro skoky v menu */
 
 footer { background: #222; color: #ccc; text-align: center; padding: 30px; margin-top: 30px; }
 footer strong { color: white; }
